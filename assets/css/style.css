@@ -30,3 +30,7 @@
 body.custom-background.page-id-2084 {
     background: #f0f5fb;
 }
+
+.elementor-section {
+    left: 0px !important;
+}
