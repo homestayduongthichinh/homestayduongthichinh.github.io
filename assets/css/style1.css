@@ -6551,7 +6551,6 @@ mark,
 /* ===== Start Typography: Heading ===== */
 .typo-heading, .button-dark, .elementor-element .elementor-button-dark .elementor-button, .button-light, .elementor-element .elementor-button-light .elementor-button, h1, h2, h3, h4, h5, h6, .lexus-h1, .lexus-h2, .lexus-h3, .lexus-h4, .lexus-h5, .lexus-h6, blockquote, .single .navigation .nav-link a, .related-posts .related-heading, .author-wrapper .author-name, .error404 .error-404 .error-title, .comments-title, .comment-respond .comment-reply-title, .widget_recent_entries li a, #secondary .elementor-widget-container h5:first-of-type, .contactform-content .form-title, .elementor-widget-heading .sub-title, .mc4wp-form-fields button, .elementor-testimonial-content, .elementor-widget-opal-testimonials .elementor-testimonial-name, .elementor-widget-opal-testimonials .elementor-testimonial-job, .rooms .hb_room .price, .rooms .hb_room .price span.price_value, .hb_package_title label, .hb_single_room_tab_details #comments h2, .hb_related_other_room > .title {
   max-width: 100%;
-  font-family: Cinzel;
   font-style: normal; }
 
 /* ===== End Typography: Heading ===== */
