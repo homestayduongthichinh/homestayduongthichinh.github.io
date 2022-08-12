@@ -1,8 +1,8 @@
 $(document).ready(function() {
   // Nav
-  $("#nav").load("/shared/nav.html");
+  //$("#nav").load("/shared/nav.html");
   // Footer  
-  $("#footer").load("/shared/footer.html");
+  //$("#footer").load("/shared/footer.html");
   
   $.ajax({
     type: "GET",// method
