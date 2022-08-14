@@ -4,4 +4,4 @@
 ### Phone: 0385.406.825
 
 
-http://demo2.themelexus.com/
+http://demo2.themelexus.com/amihomestay/
