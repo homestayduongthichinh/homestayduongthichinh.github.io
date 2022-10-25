@@ -1,81 +1,61 @@
-$(document).ready(function() {
-  // Nav
-  //$("#nav").load("/shared/nav.html");
-  // Footer  
-  //$("#footer").load("/shared/footer.html");
-  
-  $.ajax({
-    type: "GET",// method
-    url: `/shared/nav.html`, // route
-    data: {
-      "key":"value" // json format in key value pair
-    },
-    contentType: "application/json;charset=UTF-8",
-    success: function (res) {
-        $("#nav").html(res);
-     }
-  });
-  
-  $.ajax({
-    type: "GET",// method
-    url: `/shared/footer.html`, // route
-    data: {
-      "key":"value" // json format in key value pair
-    },
-    contentType: "application/json;charset=UTF-8",
-    success: function (res) {
-        $("#footer").html(res);
-     }
-  });
+(function () {
+  // nav
+  fetch("/shared/nav.html")
+      .then((response) => response.text())
+      .then((text) => {
+          const nav = document.getElementById("nav");
+          if (nav) {
+              nav.innerHTML = text;
+          }
+      });
 
-  /**
-   * POST
-   */
-   $.ajax({
-    type: "GET",// method
-    url: `/shared/posts/inner_categories.html`, // route
-    data: {
-      "key":"value" // json format in key value pair
-    },
-    contentType: "application/json;charset=UTF-8",
-    success: function (res) {
-        $("#inner_categories").html(res);
-     }
-  });
+  // footer
+  fetch("/shared/footer.html")
+      .then((response) => response.text())
+      .then((text) => {
+          const nav = document.getElementById("footer");
+          if (nav) {
+              nav.innerHTML = text;
+          }
+      });
 
-  $.ajax({
-    type: "GET",// method
-    url: `/shared/posts/inner_recent.html`, // route
-    data: {
-      "key":"value" // json format in key value pair
-    },
-    contentType: "application/json;charset=UTF-8",
-    success: function (res) {
-        $("#inner_recent").html(res);
-     }
-  });
+  // categories
+  fetch("/shared/posts/inner_categories.html")
+      .then((response) => response.text())
+      .then((text) => {
+          const nav = document.getElementById("inner_categories");
+          if (nav) {
+              nav.innerHTML = text;
+          }
+      });
 
-  $.ajax({
-    type: "GET",// method
-    url: `/shared/posts/inner_tags.html`, // route
-    data: {
-      "key":"value" // json format in key value pair
-    },
-    contentType: "application/json;charset=UTF-8",
-    success: function (res) {
-        $("#inner_tags").html(res);
-     }
-  });
+  // recent
+  fetch("/shared/posts/inner_recent.html")
+      .then((response) => response.text())
+      .then((text) => {
+          const nav = document.getElementById("inner_recent");
+          if (nav) {
+              nav.innerHTML = text;
+          }
+      });
 
-  $.ajax({
-    type: "GET",// method
-    url: `/shared/posts/post_comments.html`, // route
-    data: {
-      "key":"value" // json format in key value pair
-    },
-    contentType: "application/json;charset=UTF-8",
-    success: function (res) {
-        $("#post_comments").html(res);
-     }
-  });
-});
+  // tags
+  fetch("/shared/posts/inner_tags.html")
+      .then((response) => response.text())
+      .then((text) => {
+          const nav = document.getElementById("inner_tags");
+          if (nav) {
+              nav.innerHTML = text;
+          }
+      });
+
+  // comments
+  fetch("/shared/posts/post_comments.html")
+      .then((response) => response.text())
+      .then((text) => {
+          const nav = document.getElementById("post_comments");
+          if (nav) {
+              nav.innerHTML = text;
+          }
+      });
+})();
