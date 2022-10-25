@@ -27,4 +27,55 @@ $(document).ready(function() {
         $("#footer").html(res);
      }
   });
+
+  /**
+   * POST
+   */
+   $.ajax({
+    type: "GET",// method
+    url: `/shared/posts/inner_categories.html`, // route
+    data: {
+      "key":"value" // json format in key value pair
+    },
+    contentType: "application/json;charset=UTF-8",
+    success: function (res) {
+        $("#inner_categories").html(res);
+     }
+  });
+
+  $.ajax({
+    type: "GET",// method
+    url: `/shared/posts/inner_recent.html`, // route
+    data: {
+      "key":"value" // json format in key value pair
+    },
+    contentType: "application/json;charset=UTF-8",
+    success: function (res) {
+        $("#inner_recent").html(res);
+     }
+  });
+
+  $.ajax({
+    type: "GET",// method
+    url: `/shared/posts/inner_tags.html`, // route
+    data: {
+      "key":"value" // json format in key value pair
+    },
+    contentType: "application/json;charset=UTF-8",
+    success: function (res) {
+        $("#inner_tags").html(res);
+     }
+  });
+
+  $.ajax({
+    type: "GET",// method
+    url: `/shared/posts/post_comments.html`, // route
+    data: {
+      "key":"value" // json format in key value pair
+    },
+    contentType: "application/json;charset=UTF-8",
+    success: function (res) {
+        $("#post_comments").html(res);
+     }
+  });
 });
