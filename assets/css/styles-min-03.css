@@ -1,0 +1,20 @@
+body.custom-background {
+    background-color: #ffffff;
+    background-image: url("/assets/images/pattern.jpg");
+    background-position: left top;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+
+#loftloader-wrapper.pl-sun #loader {
+    color: #cf9d6c;
+}
+
+#loftloader-wrapper .loader-section {
+    opacity: 0.95;
+}
+
+#loftloader-wrapper .loader-section {
+    background: #000000;
+}
