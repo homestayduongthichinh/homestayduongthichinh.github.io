@@ -1,55 +1,5 @@
 @charset "UTF-8";
-/*
-Theme Name: AmiHomeStay
-Theme URI: http://demo2.themelexus.com/amihomestay/
-Author: Themelexus
-Author URI: https://www.Themelexus.com/
-Description: Gdmart is a Supermarket online WordPress theme for digital, electronics, accessories. Comes with  06+ eye-catchy demos just 1-click import and a set of powerful plugins to boost your sales.
-Version: 1.0.8
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: two-columns, three-columns, left-sidebar, right-sidebar, custom-menu, editor-style, featured-images, flexible-header, full-width-template, post-formats, sticky-post, translation-ready
-Text Domain: amihomestay
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-*/
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-1.0 Normalize
-2.0 Accessibility
-3.0 Alignments
-4.0 Clearings
-5.0 Typography
-    5.1 Page Title
-6.0 Forms
-7.0 Formatting
-8.0 Lists
-9.0 Tables
-10.0 Links
-11.0 Featured Image Hover
-12.0 Navigation
-   12.1 Off Canvas
-   12.2 Pagination
-13.0 Layout
-   13.1 Header
-   13.2 Front Page
-   13.3 Regular Content
-   13.4 Posts
-   13.5 Pages
-   13.6 Footer
-14.0 Comments
-15.0 Widgets
-16.0 Media
-   16.1 Galleries
-17.0 Modal
-    17.1 Modal User
-18.0 SVGs Fallbacks
-19.0 Colors
-20.0 Media Queries
-21.0 Print
---------------------------------------------------------------*/
 .main-navigation.navigation-dark .top-menu > li > a {
   color: #cccccc; }
   .main-navigation.navigation-dark .top-menu > li > a a:not(:hover) {
@@ -2617,7 +2567,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 Styles based on Normalize v5.0.0 @link https://github.com/necolas/normalize.css
 --------------------------------------------------------------*/
 html {
-  font-family: "Ubuntu", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-family: sans-serif;
   line-height: 1.875;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
@@ -2704,7 +2654,7 @@ svg:not(:root) {
   overflow: hidden; }
 
 button, input, optgroup, select, textarea {
-  font-family: "Ubuntu", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-family: sans-serif;
   font-size: 100%;
   line-height: 1.875;
   margin: 0; }
@@ -7227,7 +7177,7 @@ body, button, input, select, textarea {
   color: #6b6460;
   font-size: 1rem;
   line-height: 1.875;
-  font-family: "Ubuntu", "Helvetica Neue", helvetica, arial, sans-serif; }
+  font-family: sans-serif; }
 
 body {
   text-rendering: auto;
@@ -7609,17 +7559,17 @@ input[type="radio"] + label, input[type="checkbox"] + label {
 /* Placeholder text color -- selectors need to be separate to work. */
 ::-webkit-input-placeholder, :-moz-placeholder {
   color: #6b6460;
-  font-family: "Ubuntu", "Helvetica Neue", helvetica, arial, sans-serif; }
+  font-family: sans-serif; }
 
 ::-moz-placeholder {
   color: #6b6460;
-  font-family: "Ubuntu", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-family: sans-serif;
   opacity: 1;
   /* Since FF19 lowers the opacity of the placeholder by default */ }
 
 :-ms-input-placeholder {
   color: #6b6460;
-  font-family: "Ubuntu", "Helvetica Neue", helvetica, arial, sans-serif; }
+  font-family: sans-serif; }
 
 /* Checkbox */
 input[type="checkbox"] {
