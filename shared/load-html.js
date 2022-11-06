@@ -1,71 +1,39 @@
 (function () {
-  const timeoutInterval = (i) => setTimeout(() => clearInterval(i), 2000);
   // innerHTML
-  const innerHTML = (interval, text, cb) => {
-    console.log(interval)
-    if (cb()) {
-      cb().innerHTML = text;
-      clearInterval(interval);
+  const innerHTML = (text, id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.innerHTML = text;
     }
   };
 
   // nav
   fetch("/shared/nav.html")
     .then((response) => response.text())
-    .then((text) => {
-      const loop = setInterval(() => {
-        innerHTML(loop, text, () => document.getElementById("nav"));
-      }, 0);
-      timeoutInterval(loop);
-    });
+    .then((text) => innerHTML(text, "nav"));
 
   // footer
   fetch("/shared/footer.html")
     .then((response) => response.text())
-    .then((text) => {
-      const loop = setInterval(() => {
-        innerHTML(loop, text, () => document.getElementById("footer"));
-      }, 0);
-      timeoutInterval(loop);
-    });
+    .then((text) => innerHTML(text, "footer"));
 
   // categories
   fetch("/shared/posts/inner_categories.html")
     .then((response) => response.text())
-    .then((text) => {
-      const loop = setInterval(() => {
-        innerHTML(loop, text, () => document.getElementById("inner_categories"));
-      }, 0);
-      timeoutInterval(loop);
-    });
+    .then((text) => innerHTML(text, "inner_categories"));
 
   // recent
   fetch("/shared/posts/inner_recent.html")
     .then((response) => response.text())
-    .then((text) => {
-      const loop = setInterval(() => {
-        innerHTML(loop, text, () => document.getElementById("inner_recent"));
-      }, 0);
-      timeoutInterval(loop);
-    });
+    .then((text) => innerHTML(text, "inner_recent"));
 
   // tags
   fetch("/shared/posts/inner_tags.html")
     .then((response) => response.text())
-    .then((text) => {
-      const loop = setInterval(() => {
-        innerHTML(loop, text, () => document.getElementById("inner_tags"));
-      }, 0);
-      timeoutInterval(loop);
-    });
+    .then((text) => innerHTML(text, "inner_tags"));
 
   // comments
   fetch("/shared/posts/post_comments.html")
     .then((response) => response.text())
-    .then((text) => {
-      const loop = setInterval(() => {
-        innerHTML(loop, text, () => document.getElementById("post_comments"));
-      }, 0);
-      timeoutInterval(loop);
-    });
+    .then((text) => innerHTML(text, "post_comments"));
 })();
