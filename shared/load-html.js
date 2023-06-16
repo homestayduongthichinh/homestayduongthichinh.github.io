@@ -37,3 +37,14 @@
     .then((response) => response.text())
     .then((text) => innerHTML(text, "post_comments"));
 })();
+
+/**
+ * Download image
+ */
+
+// var canvas = document.getElementsByClassName('MyME0d m5SR9c-KeEW5b-UzWXSb')[0]
+// canvas.toBlob(function(blob) {
+//   var newImg = document.createElement('img'),
+//       url = URL.createObjectURL(blob);
+// console.log(url)
+// });
